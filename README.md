@@ -45,6 +45,32 @@ This implementation was inspired by Dallas Card's Python code for the Dawid-Sken
 
 **Note**: The dataset is not uploaded here due to confidential reasons.  
 
+## Dataset description
+The dataset contains 11 columns and 35628 rows. Each entry in the dataset represents a unique word along with annotations provided by different annotators. 
+
+### Data Fields
+* **Annotator** : Identifier for the annotator who labeled the word. This helps in tracking which annotator provided which label.
+
+* **Task** : A unique identifier for the task or batch the annotation was part of, linking it to specific annotation sessions or projects.
+
+* **WordRT** : Reaction time for the annotation of the word, providing insight into the annotator's response time, which can be an indirect measure of task difficulty or annotator certainty.
+  
+* **WordTag** : The Part-of-Speech (POS) tag assigned by the annotator to the word, representing the annotator's interpretation of the word's grammatical role in the sentence.
+  
+* **SentRT** : Reaction time for annotating the entire sentence, useful for analyzing the overall complexity of the annotation task.
+  
+* **SentId** : A unique identifier for the sentence from which the word is extracted, useful for sentence-level analysis and context understanding.
+  
+* **Word** : The actual word that was annotated, serving as the primary data point for POS tagging.
+  
+* **Text** : The full sentence from which the word is taken, providing context for the word within its natural linguistic environment.
+  
+* **Freq** : Frequency score of the word in the corpus, indicating how common or rare the word is.
+  
+* **Length** : The length of the word in characters, which can sometimes correlate with annotation difficulty or word complexity.
+  
+* **Gold** : The gold standard label for the word, considered the correct POS tag based on expert or consensus review. This is used to validate and evaluate the accuracy of the annotations provided by the crowd.
+
 
 ### ipynb file
 * Includes statistics of the dataset.
